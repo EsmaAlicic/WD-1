@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>eLibrary - Registracija</title>
+  <link rel = "icon" href = "icons8-open-book-64.png" type = "image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="registracija.css">
+  <script defer src="registracija.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/aa20a964cc.js" crossorigin="anonymous"></script>
+</head>
+<body >
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">eLibrary</label>
+    <ul>
+      <li><a  href="eBiblioteka.html">Početna</a></li>
+      <li><a class="active" href="registracija.html">Registracija</a></li>
+      <li><a href="izbor.html">Izbor</a></li>
+      <li><a href="oNama.html">O nama</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <form id="form" action="/">
+        <h1>Registracija</h1>
+        <div class="input-control">
+            <label for="ime">Ime:</label>
+            <input id="ime" name="ime" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="prezime">Prezime:</label>
+          <input id="prezime" name="prezime" type="text">
+          <div class="error"></div>
+      </div>
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="datumRodjenja">Datum rođenja:</label>
+          <input type="date" class="input">
+       </div>  
+        <div class="checking">
+          <label>Žanrovi koje volim:</label>
+          <br>
+          <br>
+          <input type="checkbox">
+          <label>Romani</label>
+          <br>
+          <input type="checkbox">
+          <label>Pripovijetke</label>
+          <br>
+          <input type="checkbox">
+          <label>Bajke</label>
+          <br>
+          <input type="checkbox">
+          <label>Poezija</label>
+          <br>
+          <input type="checkbox">
+          <label>Novele</label>
+          <br>
+          <br>
+       </div>
+        <button type="submit">Potvrdi</button>
+    </form>
+  </div>
+
+  <footer>
+    <p> 2023 eLibrary</p>
+    <div class="social-icons">
+      <a href="https://www.google.com/maps/place/Campus+of+University+of+Zenica/@44.1995671,17.9033839,17.65z/data=!4m6!3m5!1s0x475ee24259b7e2c9:0xbbbe13ba46b02200!8m2!3d44.1994776!4d17.9021989!16s%2Fm%2F0cpdzxz"><i class="fa-solid fa-location-dot"></i></a>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  
+</body>
+</html>
+
+

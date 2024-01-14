@@ -1,0 +1,246 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;  
+}
+  
+body {
+  font-size: 0.9rem;
+  color: black;
+  background-color: #efe4e4;
+  opacity: 0.9;
+}
+  
+nav{
+  background: #e6dddd;
+  height: 80px;
+  width: 100%;
+  opacity: 0.9;
+}
+  
+label.logo{
+  color: rgb(9, 35, 71);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+  
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+  
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+  
+nav ul li a{
+  color: rgb(9, 35, 71);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+  
+a.active,a:hover{
+  background:  	#F19CBB;
+  transition: .5s;
+}
+  
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+  
+#check{
+  display: none;
+}
+  
+@media (max-width: 952px){
+  label.logo{
+  font-size: 30px;
+  padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+  
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #bcb099;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #675b43;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.naslov h1{
+  text-transform: uppercase;
+  color:rgb(9, 35, 71);
+  margin:50px 20px;
+  width: 200px;
+}
+
+.naslov a{
+  flex-direction: column;
+  font-size: 25px;
+  margin: 5px;
+  background: none;
+  color: #675b43;
+}
+
+.naslov h1{
+  text-transform: uppercase;
+  color:rgb(6, 23, 48);
+  margin:50px;
+}
+
+.knjiga{
+  position: relative;
+  margin-left: 20px;
+  width: 23%;
+  min-width: 280px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: blanchedalmond;
+  height: 380px;
+  color: #fff;
+  z-index: -1;
+  border-image: linear-gradient(rgb(6, 23, 48), rgb(71, 125, 207)) 30;
+  border-width: 4px;
+  border-style: solid;
+  text-align: center;
+}
+
+.knjiga img {
+  width:200px;
+  height: 242px;
+  float:left;
+}
+
+.knjiga p{
+  display: block;
+  margin-left: 2em;
+  font-size: 16px;
+  color: black;
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+}
+
+.btn {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: var(--gap);
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: none;
+  box-shadow: var(--shadow);
+  position: relative;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 300px;
+  height: 60px;  
+}
+  
+.bx {
+  font-size: 1.7rem;  
+}
+  
+.dropdown {
+  position: absolute;
+  width: 250px;
+  background: white;
+  margin-left: 50px;
+  margin-top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+  
+.dropdown a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+  
+.dropdown a:hover {
+  background-color: var(--color);
+  color: #F19CBB;
+}
+  
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+  
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+}
+  
+.columns {
+  width: 33%;
+  min-width: 280px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.align-right {
+  text-align: right;
+}
+

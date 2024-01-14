@@ -1,0 +1,218 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url("whiteBook.jpg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} 
+
+nav{
+  background: #fddde6;
+  height: 80px;
+  width: 100%;
+  opacity: 0.9;
+}
+
+label.logo{
+  color: rgb(9, 35, 71);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+  
+nav ul li a{
+  color: rgb(9, 35, 71);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background: #F19CBB;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: #eeafd4;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;    
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #ef56b0;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.container{
+  position:relative;
+  max-width: 500px;
+  width: 100%;
+  background: #ffffff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+  border-radius: 10px;
+  opacity: .9;
+  z-index: -1;
+}
+
+#form h1 {
+  color: rgb(9, 35, 71);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#form button {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  rgb(9, 35, 71);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.input-control {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checking{
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.input-control label{
+  width: 200px;
+  color: #000000;
+  text-align: left;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.checking label{
+  width: 200px;
+  color: #000000;
+  text-align: left;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.input-control input{
+  width: 100%;
+  outline: none;
+  border: 1px solid #000000;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.input-control input:focus,
+.checking input:focus{
+  border: 1px solid rgb(9, 35, 71);
+  
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  text-align: left;
+  font-size: 13px;
+  height: 17px;
+}
+@media (max-width:858px) {
+  .container{
+    z-index: -1;
+  }
+  .input-control{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input-control label{
+    margin-bottom: 5px;
+  }
+}
+footer {
+  color: rgb(9, 35, 71);
+  padding: 10px;
+  text-align: center;
+}

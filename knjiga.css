@@ -1,0 +1,216 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;  
+}
+  
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url("whiteBook.jpg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover
+}
+
+nav{
+  background: #fddde6;
+  height: 80px;
+  width: 100%;
+  opacity: 0.9;
+}
+  
+label.logo{
+  color: rgb(9, 35, 71);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+  
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+  
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+  
+nav ul li a{
+  color: rgb(9, 35, 71);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+  
+a.active,a:hover{
+  background:  	#F19CBB;
+  transition: .5s;
+}
+  
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+  
+#check{
+  display: none;
+}
+  
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+  
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #eeafd4;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #ef56b0;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.naslov h1{
+  text-transform: uppercase;
+  color:rgb(9, 35, 71);
+  margin:50px 20px;
+  width: 200px;
+}
+
+.naslov a{
+  flex-direction: column;
+  font-size: 25px;
+  margin: 5px;
+  background: none;
+  color: #675b43;
+}
+
+.naslov h1{
+  text-transform: uppercase;
+  color:rgb(6, 23, 48);
+  margin:50px;
+  width:90%;
+}
+
+.knjiga{
+  margin-left: 20px;
+  width: 99%;
+  min-width: 280px;
+  color: #ffffff;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;  
+}
+
+.knjiga img {
+  width:300px;
+  height: 350px;
+  float:left;
+}
+
+.knjiga p{
+  font-size: 18px;
+  color: black; 
+}
+
+.knjiga a{
+    color: rgb(6, 23, 48);
+    font-size: 25px;  
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 2px;
+}
+  
+.columns {
+  width: 33%;
+  min-width: 280px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  display: inline-block; 
+  color: #fff;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.recenzije{
+  margin-left: 20px;
+  text-align:inherit;
+  text-align: center;
+  width: 99%;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.recenzije label{
+  font-size: 20px;
+  padding:25px;
+}
+
+.recenzije textarea{
+  width: 50%;
+  height: 50%;
+}
+
+footer {
+  color: rgb(9, 35, 71);
+  padding: 10px;
+  text-align: center;
+}
+
+footer p{
+  text-align: center;
+  padding: 0px;
+  font-size: 16px;
+  font-style: normal;
+}
